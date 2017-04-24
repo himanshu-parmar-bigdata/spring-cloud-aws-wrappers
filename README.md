@@ -1,5 +1,3 @@
-[![axisj-contributed](https://img.shields.io/badge/AXISJ.com-Contributed-green.svg)](https://github.com/axisj) ![](https://img.shields.io/badge/Tulum-Brant&Tiffy-red.svg)
-
 
 Spring-Boot based Amazon Simple Storage Service(S3) API Sample
 =======
@@ -11,7 +9,13 @@ Spring Boot + Spring Cloud AWS
 ```
 
 ###Description
-http://brantiffy.axisj.com/archives/131
+This little demo project helps to understand:
+1) How to create AWS Configuration for initalizing and injecting BasicAWSCredentials, amazonS3Client, SimpleMessageListenerContainer, QueueMessagingTemplate, AmazonSQSAsync(client)
+2) How to create S3Wrapper to facilitate create and delete objects on S3
+3) How to create SQSWrapper to facilitate create and delete messages on SQS
+
+4) Create SQS listener for any arbitary SQS queue and start it as background server and configure it to read number of messages during each poll
+ 
 
 ###How to Open
 ```
@@ -37,6 +41,10 @@ Open IntelliJ Preference
 GET /api/aws/s3/list : List of Objects
 GET /api/aws/s3/download?key={key} : Download
 POST /api/aws/s3/upload : Upload
+
+GET /api/aws/sqs/readMessage : reads a message from SQS
+POST /api/aws/sqs/addMessage : push a message to SQS 
+
 ```
 
 ### Environment
