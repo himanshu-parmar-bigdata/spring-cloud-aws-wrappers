@@ -1,5 +1,5 @@
 
-Spring-Boot based Amazon Simple Storage Service(S3) API Sample
+Spring-Boot based Amazon S3 and SQS Wrapper Sample
 =======
 
 
@@ -33,7 +33,11 @@ Open IntelliJ Preference
 ```
 - application-example.properties rename to application.properties
 - set your AWS accessKey & secretKey
-- Run main() on Application Class
+- commands to run from terminal
+  gradle build 
+  gradle bootRun
+  
+URL to verify http://localhost:8080//api/aws/sqs/readMessage
 ```
 
 ### API 
