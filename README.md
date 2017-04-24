@@ -1,5 +1,5 @@
 
-Spring-Boot based Amazon Simple Storage Service(S3) API Sample
+Spring-Boot based Amazon S3 and SQS Wrapper Sample
 =======
 
 
